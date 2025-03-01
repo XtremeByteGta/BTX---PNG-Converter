@@ -1,3 +1,3 @@
 @echo off
-python convert.py
+python btx_converter.py
 pause
