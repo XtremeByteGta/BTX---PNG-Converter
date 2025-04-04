@@ -1,83 +1,81 @@
-BTX to PNG Converter Script
+# BTX to PNG Converter Script  
+🚀 A Handy Tool for Converting .btx Files to .png by Xtreme Byte  
 
-Скрипт для обработки файлов .btx, их конвертации в .png с использованием утилиты ConvertXtremeByte.exe и организации результатов в соответствующие папки.
-Автор: Xtreme Byte
+---
 
-Описание
-Этот скрипт автоматизирует процесс обработки файлов с расширением .btx. Он выполняет следующие действия:
-Извлекает данные из .btx файла и создаёт временный .ktx файл.
+## What is it?  
+BTX to PNG Converter Script is a Python script designed to streamline the process of converting .btx files into .png images. Powered by the ConvertXtremeByte.exe utility, it automates file handling and organizes everything neatly into folders. Created by Xtreme Byte, this tool is perfect for batch processing .btx files with ease!  
 
-Запускает внешнюю утилиту ConvertXtremeByte.exe для конвертации .ktx в .png.
+---
 
-Удаляет временные файлы (.ktx, .pvr).
+## Features  
+- 🔹 Extracts .btx data — Converts .btx to a temporary .ktx file  
+- 🔹 Converts to .png — Uses ConvertXtremeByte.exe for seamless conversion  
+- 🔹 Cleans up — Deletes temporary .ktx and .pvr files  
+- 🔹 Organizes files — Moves .btx to a btx folder and .png to a png folder  
+- 🔹 User-friendly output — Displays progress with a touch of Xtreme Byte flair  
 
-Перемещает исходный .btx файл в папку btx, а сгенерированный .png — в папку png.
+---
 
-Выводит информацию о процессе выполнения с указанием автора (Xtreme Byte).
+## Requirements  
+- ✅ Python 3.x — Make sure Python is installed  
+- ✅ ConvertXtremeByte.exe — Must be in the same directory as the script  
+- ✅ .btx files — Place them in the script’s working directory  
 
-Скрипт создаёт необходимые папки (png и btx), если они отсутствуют, и обрабатывает все .btx файлы в текущей директории.
-Требования
-Python 3.x: Установленная версия Python для запуска скрипта.
+---
 
-ConvertXtremeByte.exe: Утилита должна находиться в той же директории, что и скрипт, и быть доступной для выполнения.
+## Installation  
+1. Download the script (btx_converter.py or name it whatever you like)  
+2. Move it to the folder with your .btx files  
+3. Ensure ConvertXtremeByte.exe is in the same directory  
+4. Install Python if you don’t have it:  
+   👉 [Download Python](https://www.python.org/downloads/)  
+5. Ready to roll! 🎉  
 
-Файлы .btx в текущей директории.
+---
 
-Установка
-Скачайте скрипт btx_converter.py (или любое другое имя, которое вы выберете).
+## How to Use?  
+1. Open a terminal (or command prompt) in the script’s directory  
+2. Run this command:  
+   python btx_converter.py  
+3. Watch the magic happen: 😎  
+   - Creates png and btx folders if they don’t exist  
+   - Processes all .btx files in the directory  
+   - Shows you the progress with Xtreme Byte’s signature style  
 
-Поместите его в директорию с файлами .btx, которые нужно обработать.
+Example Output:  
+##################################################  
+# Скрипт создан: Xtreme Byte                     #  
+##################################################  
+Запуск скрипта...  
+Создана папка: png by Xtreme Byte  
+Создана папка: btx by Xtreme Byte  
+Запускаем ConvertXtremeByte.exe для example.ktx (Xtreme Byte)  
+Перемещаем example.png в png/example.png (Xtreme Byte)  
+Перемещаем example.btx в btx/example.btx (Xtreme Byte)  
+Файл example.btx успешно обработан! Спасибо Xtreme Byte  
+Обработка завершена! (Xtreme Byte)  
+Успешно обработано: 1 из 1 файлов  
 
-Убедитесь, что ConvertXtremeByte.exe находится в той же директории.
+---
 
-Установите Python, если он ещё не установлен:
-Скачать Python
+## Possible Issues  
+- Missing ConvertXtremeByte.exe 😕 — Ensure it’s in the same folder as the script  
+- No .btx files 😢 — The script will let you know if there’s nothing to process  
+- Conversion errors ⚠️ — Any issues from ConvertXtremeByte.exe will show up in the console  
 
-Использование
-Откройте терминал (или командную строку) в директории со скриптом.
+---
 
-Выполните команду:
-bash
+## Notes  
+- The script keeps your original .btx files safe by moving them to the btx folder  
+- Temporary files (.ktx, .pvr) are auto-deleted after conversion  
+- Proudly crafted by Xtreme Byte — his mark is all over the output!  
 
-python btx_converter.py
+---
 
-Скрипт автоматически:
-Создаст папки png и btx, если их нет.
+## License  
+This script is shared "as is". Feel free to use or tweak it however you want. Xtreme Byte isn’t responsible for any hiccups you might run into.  
 
-Обработает все .btx файлы в текущей директории.
+---
 
-Выведет информацию о процессе и результатах.
-
-Пример вывода:
-
-##################################################
-# Скрипт создан: Xtreme Byte                     #
-##################################################
-Запуск скрипта...
-Создана папка: png by Xtreme Byte
-Создана папка: btx by Xtreme Byte
-Запускаем ConvertXtremeByte.exe для example.ktx (Xtreme Byte)
-Перемещаем example.png в png/example.png (Xtreme Byte)
-Перемещаем example.btx в btx/example.btx (Xtreme Byte)
-Файл example.btx успешно обработан! Спасибо Xtreme Byte
-
-Обработка завершена! (Xtreme Byte)
-Успешно обработано: 1 из 1 файлов
-
-Возможные ошибки
-Отсутствие ConvertXtremeByte.exe: Убедитесь, что утилита находится в той же директории, что и скрипт.
-
-Нет .btx файлов: Скрипт завершится с сообщением, если в директории нет файлов с расширением .btx.
-
-Ошибка конвертации: Если ConvertXtremeByte.exe выдаёт ошибку, она будет выведена в консоль.
-
-Примечания
-Скрипт не изменяет исходные данные напрямую, а только перемещает их в папку btx.
-
-Временные файлы (.ktx, .pvr) удаляются автоматически после обработки.
-
-Автор скрипта — Xtreme Byte, что отображается в баннере и сообщениях.
-
-Лицензия
-Этот скрипт распространяется "как есть". Вы можете использовать и модифицировать его на своё усмотрение. Автор не несёт ответственности за любые проблемы, возникшие при его использовании.
-
+Enjoy converting with style! 🚀 Xtreme Byte approves!
